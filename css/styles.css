@@ -311,9 +311,12 @@ button {
   justify-content: space-between;
 }
 
-.craft-img {
-  height: 294px;
+.craft-img-box {
   position: relative;
+}
+
+.craft-img {
+  display: block;
 }
 
 .craft-box-text {
