@@ -55,7 +55,7 @@
 
       <section class="hero">
         <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button-hero">Заказать услугу</button>
+        <button type="button" class="button-hero" data-modal-open>Заказать услугу</button>
       </section>
 
       <!-----Секція 2 Наши преимущества ----->
@@ -503,5 +503,19 @@
         </div>
       </div>
     </footer>
+
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="button-modal" data-modal-close>
+          <svg class="button-modal-icon">
+            <use href="./images/symbol-defs.svg#icon-Vector">
+            </use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
