@@ -514,15 +514,6 @@ button {
   margin-top: 30px;
 }
 
-.list-gallery:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.list-gallery {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .mobile-box-text {
   position: absolute;
   transform: translateY(100%);
@@ -554,8 +545,19 @@ button {
   transform: translateY(0%);
 }
 
+.pic:focus .mobile-box-text {
+  transform: translateY(0%);
+}
+
+.pic:hover,
+.pic:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .pic {
   display: block;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .holder {
